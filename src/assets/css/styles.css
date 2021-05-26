@@ -34,8 +34,30 @@ html, body {
 }
 
 .btn-primary{
-    background-color: #5f9ed3;
-    border-color: #548bb8
+    background-color: #ddedfe;
+    border-color: #e7eff1;
+    color: #000 !important;
 }
 
+.btn-primary:hover, .btn-primary:focus{
+    background-color: #eff7ff;
+    border-color: #eff7ff;
+    color: #E1F6FC !important;
+}
 
+.bg-secondary {
+    background-color: var(--color-secondary) !important;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td, 
+.table-striped>tbody>tr:nth-child(odd)>th {
+   background-color: #ddedfe;
+   border-color: transparent !important;
+}
+
+.table-striped>tbody>tr:nth-child(even)>td,
+.table-striped>tbody>tr:nth-child(even)>th {
+  background-color: #eff7ff;
+  border-color: transparent !important;
+  color: #000;
+}

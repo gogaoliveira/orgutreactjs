@@ -1,7 +1,9 @@
 import Dashboard from 'pages/Dashboard';
 import Home from 'pages/Home';
 import Amigos from 'pages/Amigos';
-import Comunidades from 'pages/Comunidades'
+import Comunidades from 'pages/Comunidades';
+import Fotos from 'pages/Fotos';
+import Videos from 'pages/Videos';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 const Routes = () => {
@@ -22,6 +24,12 @@ const Routes = () => {
                 </Route>
                 <Route path="/Comunidades">
                     <Comunidades />
+                </Route>
+                <Route path="/Fotos">
+                    <Fotos />
+                </Route>
+                <Route path="/Videos">
+                    <Videos />
                 </Route>
             </Switch>
         </BrowserRouter>

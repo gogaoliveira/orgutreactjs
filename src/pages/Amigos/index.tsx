@@ -12,8 +12,8 @@ const Amigos = () => {
                     <p className="lead">AMIGOS</p>
                     <hr />
                     <p>AMIGOS</p>
-                    <Link className="btn btn-primary btn-lg" to="/dashboard">
-                        Acessar dashboard
+                    <Link className="btn btn-primary btn-lg" to="/Home">
+                        Voltar
                     </Link>
                 </div>
             </div>

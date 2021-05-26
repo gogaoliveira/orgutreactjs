@@ -23,9 +23,9 @@ const Home = () => {
                             <p className="font-weight-light mb-1">Casado</p>
                             <hr />
                             <div className="btn-group-vertical w-100">
-                                <button className="btn btn-primary btn-sm btn-block "><Link className="nav-link px-2 text-light" to="/Home" >Inicio</Link></button>
-                                <button className="btn btn-primary btn-sm btn-block"><Link className="nav-link px-2 text-light" to="/Amigos">Amigos</Link></button>
-                                <button className="btn btn-primary btn-sm btn-block"><Link className="nav-link px-2 text-light" to="/Comunidades">Comunidades</Link></button>
+                                <button className="btn btn-primary btn-sm btn-block "><Link className="nav-link px-2 text-dark" to="/Home" >Inicio</Link></button>
+                                <button className="btn btn-primary btn-sm btn-block"><Link className="nav-link px-2 text-dark" to="/Fotos">Fotos</Link></button>
+                                <button className="btn btn-primary btn-sm btn-block"><Link className="nav-link px-2 text-dark" to="/Videos">Videos</Link></button>
                             </div>
 
 
@@ -70,19 +70,80 @@ const Home = () => {
                             <div className="column">
                                 <ul className="nav nav-tabs" id="myTab" role="tablist">
                                     <li className="nav-item">
-                                        <a className="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                                        <a className="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Social</a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" id="profile-tab" data-toggle="tab" href="#perfil" role="tab" aria-controls="profile" aria-selected="false">Perfil</a>
+                                        <a className="nav-link" id="profile-tab" data-toggle="tab" href="#perfil" role="tab" aria-controls="profile" aria-selected="false">Profissional</a>
                                     </li>
                                     <li className="nav-item">
                                         <a className="nav-link" id="contact-tab" data-toggle="tab" href="#contato" role="tab" aria-controls="contact" aria-selected="false">Contato</a>
                                     </li>
                                 </ul>
                                 <div className="tab-content" id="myTabContent">
-                                    <div className="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Home</div>
-                                    <div className="tab-pane fade" id="perfil" role="tabpanel" aria-labelledby="profile-tab">profile</div>
-                                    <div className="tab-pane fade" id="contato" role="tabpanel" aria-labelledby="contact-tab">contact</div>
+                                    <div className="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                        <table className="table table-striped table-primary ">
+                                            <tbody>
+                                                <tr className="">
+                                                    <th>Relacionamento</th>
+                                                    <td>Casado(a)</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Aniversário</th>
+                                                    <td>23 Setembro</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Filhos</th>
+                                                    <td>Sim</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Cidade Natal</th>
+                                                    <td>Araranguá</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Atividades</th>
+                                                    <td>Series e Games</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div className="tab-pane fade" id="perfil" role="tabpanel" aria-labelledby="profile-tab">
+                                        <table className="table table-striped table-primary ">
+                                            <tbody>
+                                                <tr className="">
+                                                    <th>Área de Atuação</th>
+                                                    <td>Desenvolvimento </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Interesses</th>
+                                                    <td>Java, Spring boot, rest API... </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Github</th>
+                                                    <td><a href="https://github.com/gogaoliveira/" target="_blanc">github.com/gogaoliveira</a></td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div className="tab-pane fade" id="contato" role="tabpanel" aria-labelledby="contact-tab">
+                                        <table className="table table-striped table-primary ">
+                                            <tbody>
+                                                <tr className="">
+                                                    <th>Linkedin</th>
+                                                    <td><a href="https://www.linkedin.com/in/douglas-gomes-de-oliveira-aa562615b/" target="_blanc">linkedin.com/in/douglas-gomes-de-oliveira-aa562615b</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Whatsapp</th>
+                                                    <td><a href="https://api.whatsapp.com/send?phone=5548999287404&text=Ol%C3%A1%2C%20encontrei%20seu%20contato%20em%20seu%20site" target="_blanc">Enviar Whats</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Email</th>
+                                                    <td>2doug077@gmail.com</td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
 

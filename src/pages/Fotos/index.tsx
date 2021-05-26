@@ -2,16 +2,16 @@ import Footer from "components/Footer";
 import NavBar from "components/NavBar";
 import { Link } from "react-router-dom";
 
-const Comunidades = () => {
+const Fotos = () => {
     return (
         <>
             <NavBar />
             <div className="container">
                 <div className="jumbotron">
-                    <h1 className="display-4">Comunidades</h1>
-                    <p className="lead">Comunidades</p>
+                    <h1 className="display-4">Fotos</h1>
+                    <p className="lead">Fotos</p>
                     <hr />
-                    <p>Comunidades</p>
+                    <p>Fotos</p>
                     <Link className="btn btn-primary btn-lg" to="/Home">
                         Voltar
                     </Link>
@@ -22,4 +22,4 @@ const Comunidades = () => {
     );
 }
 
-export default Comunidades;
+export default Fotos;
