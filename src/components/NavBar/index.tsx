@@ -1,4 +1,4 @@
-import ImgLogo from 'assets/img/orkut.svg';
+import ImgLogo from 'assets/img/orkut.png';
 import { Link } from 'react-router-dom';
 
 const NavBar = () => {
@@ -6,7 +6,7 @@ const NavBar = () => {
         <header className="bg-primary p-2">
             <div className="container">
                 <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-                    <img src={ImgLogo} alt="DevSuperior" width="80" className="mr-5" />
+                    <img src={ImgLogo} alt="DevSuperior" width="100" className="mr-5" />
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>

@@ -1,17 +1,14 @@
 import Footer from "components/Footer";
 import NavBar from "components/NavBar";
+import Amigos from "components/Amigos";
+import Comunidades from "components/comunidades"
 import FotoPerfil from '../../assets/img/doug2.jpg';
-import java from '../../assets/img/java.svg';
-import leo from '../../assets/img/leo.jpg';
-import flavia from '../../assets/img/flavia.jpg';
-import eric from '../../assets/img/eric.jpg';
-import bill from '../../assets/img/bill.jpg';
-import spring from '../../assets/img/spring.png';
 import Camera from '../../assets/img/camera.svg';
 import Filmadora from '../../assets/img/camera-reels.svg';
 import Depo from '../../assets/img/depo.svg';
 import Star from '../../assets/img/star.svg';
 import { Link } from 'react-router-dom';
+
 
 
 const Home = () => {
@@ -20,7 +17,7 @@ const Home = () => {
             <NavBar />
             <div className="container mb-3">
                 <div className="row mt-2 h-100">
-                    <div className="col-xl-2 bg-light rounded mr-2 text-center">
+                    <div className="col-lg-2 bg-light rounded mr-2 text-center">
                         <div className="column mt-2">
                             <img src={FotoPerfil} alt="fotoPerfil" className="rounded mw-100 mx-auto" />
                             <hr />
@@ -33,43 +30,48 @@ const Home = () => {
                                 <button className="btn btn-primary btn-sm btn-block"><Link className="nav-link px-2 text-dark" to="/Fotos">Fotos</Link></button>
                                 <button className="btn btn-primary btn-sm btn-block"><Link className="nav-link px-2 text-dark" to="/Videos">Videos</Link></button>
                             </div>
-
-
-
                         </div>
                     </div>
-                    <div className="col-xl-5 bg-light rounded mr-2 rounded-top">
+                    <div className="col-lg-5 bg-light rounded mr-2 rounded-top">
                         <div className="column p-2">
                             <h3 className="ml-3">Douglas Oliveira</h3>
                             <hr />
                             <div className="row d-flex justify-content-around">
                                 <div className="colun pr-1 ">
-                                    <span className="h6">depoimentos</span>
-                                    <div className="row justify-content-center align-items-center ">
-                                        <img src={Depo} alt="camera" className="pr-2" />
-                                        <span>10</span>
-                                    </div>
+                                    <Link className="nav-link p-0 text-dark" to="/Home">
+                                        <span className="h6">depoimentos</span>
+                                        <div className="row justify-content-center align-items-center ">
+                                            <img src={Depo} alt="camera" className="pr-2" />
+                                            <span>10</span>
+                                        </div>
+                                    </Link>
                                 </div>
                                 <div className="colun pr-1 ">
-                                    <span className="h6">Fotos</span>
-                                    <div className="row justify-content-center align-items-center ">
-                                        <img src={Camera} alt="camera" className="pr-2" />
-                                        <span>10</span>
-                                    </div>
+                                    <Link className="nav-link p-0 text-dark" to="/Fotos">
+                                        <span className="h6">Fotos</span>
+                                        <div className="row justify-content-center align-items-center ">
+                                            <img src={Camera} alt="camera" className="pr-2" />
+                                            <span>10</span>
+                                        </div>
+                                    </Link>
                                 </div>
                                 <div className="colun pr-1 ">
-                                    <span className="h6">Videos</span>
-                                    <div className="row justify-content-center align-items-center ">
-                                        <img src={Filmadora} alt="camera" className="pr-2" />
-                                        <span>10</span>
-                                    </div>
+                                    <Link className="nav-link p-0 text-dark" to="/Videos">
+                                        <span className="h6">Videos</span>
+                                        <div className="row justify-content-center align-items-center ">
+                                            <img src={Filmadora} alt="camera" className="pr-2" />
+                                            <span>10</span>
+                                        </div>
+                                    </Link>
                                 </div>
                                 <div className="colun pr-1 ">
-                                    <span className="h6">Fãs</span>
-                                    <div className="row justify-content-center align-items-center ">
-                                        <img src={Star} alt="camera" className="pr-2" />
-                                        <span>10</span>
-                                    </div>
+                                    <Link className="nav-link p-0 text-dark" to="/Home">
+                                        <span className="h6">Fãs</span>
+                                        <div className="row justify-content-center align-items-center ">
+                                            <img src={Star} alt="camera" className="pr-2" />
+                                            <span>10</span>
+                                        </div>
+                                    </Link>
                                 </div>
                             </div>
                             <hr />
@@ -155,35 +157,12 @@ const Home = () => {
 
                         </div>
                     </div>
-                    <div className="col-xl-4 p-0 ">
+                    <div className="col-lg-4 p-0 ">
                         <div className=" bg-light rounded p-2 h-auto mt-2 mt-xl-0">
                             <div className="conteiner">
                                 <h5>Amigos(10)</h5>
                                 <div className="row row-cols-1 row-cols-3 g-4 ">
-                                    <div className="col">
-                                        <div className="card bg-secondary border-0 mb-2 text-center">
-                                            <img src={flavia} alt="fotoPerfil" className="rounded mw-100 mx-auto" />
-                                            <div className="card-footer">
-                                                <p className="card-text altera-fontes ">Flavia</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col">
-                                        <div className="card bg-secondary border-0 mb-2">
-                                            <img src={eric} alt="fotoPerfil" className="rounded mw-100 mx-auto " />
-                                            <div className="card-footer">
-                                                <p className="card-text altera-fontes">Eric</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col">
-                                        <div className="card bg-secondary border-0 mb-2">
-                                            <img src={bill} alt="fotoPerfil" className="rounded mw-100 mx-auto " />
-                                            <div className="card-footer">
-                                                <p className="card-text altera-fontes">Bill</p>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <Amigos />
                                 </div>
                                 <Link className="nav-link px-2 altera-fontes d-flex justify-content-end" to="/Amigos">ver todos amigos</Link>
                             </div>
@@ -192,30 +171,7 @@ const Home = () => {
                             <div className="conteiner">
                                 <h5>Comunidades(3)</h5>
                                 <div className="row row-cols-1 row-cols-3 g-4 ">
-                                    <div className="col">
-                                        <div className="card bg-secondary border-0 mb-2 text-center">
-                                            <img src={java} alt="fotoPerfil" className="rounded mw-100 mx-auto" />
-                                            <div className="card-footer">
-                                                <p className="card-text altera-fontes-2 ">Programadores Java</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col">
-                                        <div className="card bg-secondary border-0 mb-2">
-                                            <img src={leo} alt="fotoPerfil" className="rounded mw-100 mx-auto h-100 " />
-                                            <div className="card-footer">
-                                                <p className="card-text altera-fontes-2">Fãs do Ator Leonardo da vinci</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col">
-                                        <div className="card bg-secondary border-0 mb-2">
-                                            <img src={spring} alt="fotoPerfil" className="rounded mw-100 mx-auto " />
-                                            <div className="card-footer">
-                                                <p className="card-text altera-fontes">Spring boot</p>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <Comunidades />
                                 </div>
                                 <Link className="nav-link px-2 altera-fontes d-flex justify-content-end" to="/Comunidades">ver todas comunidades</Link>
                             </div>

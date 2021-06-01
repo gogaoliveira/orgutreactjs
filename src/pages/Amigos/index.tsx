@@ -1,21 +1,24 @@
 import Footer from "components/Footer";
 import NavBar from "components/NavBar";
-import { Link } from "react-router-dom";
+import AmigosC from "components/Amigos";
+import { Link } from 'react-router-dom';
 
 const Amigos = () => {
     return (
         <>
             <NavBar />
             <div className="container">
-                <div className="jumbotron">
-                    <h1 className="display-4">AMIGOS</h1>
-                    <p className="lead">AMIGOS</p>
-                    <hr />
-                    <p>AMIGOS</p>
-                    <Link className="btn btn-primary btn-lg" to="/Home">
-                        Voltar
-                    </Link>
+                <div className="col-lg-12 p-0">
+                    <div className=" bg-light rounded p-2 h-auto mt-2 mb-2 mt-xl-2">
+                        <div className="conteiner">
+                            <h5>Amigos</h5>
+                            <div className="row row-cols-1 row-cols-lg-5 row-cols-md-4 row-cols-sm-3 row-cols-2 g-4 ">
+                                <AmigosC />
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <Link className="nav-link px-2 d-flex  justify-content-end" to="/Cadastro">Ainda não é Meu amigo? CADASTRE-SE</Link>
             </div>
             <Footer />
         </>

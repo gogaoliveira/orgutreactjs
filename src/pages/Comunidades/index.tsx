@@ -1,20 +1,21 @@
 import Footer from "components/Footer";
 import NavBar from "components/NavBar";
-import { Link } from "react-router-dom";
+import ComunidadesC from "components/comunidades"
 
 const Comunidades = () => {
     return (
         <>
             <NavBar />
             <div className="container">
-                <div className="jumbotron">
-                    <h1 className="display-4">Comunidades</h1>
-                    <p className="lead">Comunidades</p>
-                    <hr />
-                    <p>Comunidades</p>
-                    <Link className="btn btn-primary btn-lg" to="/Home">
-                        Voltar
-                    </Link>
+                <div className="col-lg-12 p-0">
+                    <div className=" bg-light rounded p-2 h-auto mt-2 mb-2 mt-xl-2">
+                        <div className="conteiner">
+                            <h5>Amigos</h5>
+                            <div className="row row-cols-1 row-cols-lg-5 row-cols-md-4 row-cols-sm-3 row-cols-2 g-4 ">
+                                <ComunidadesC />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <Footer />

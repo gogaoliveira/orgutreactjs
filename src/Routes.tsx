@@ -4,6 +4,7 @@ import Amigos from 'pages/Amigos';
 import Comunidades from 'pages/Comunidades';
 import Fotos from 'pages/Fotos';
 import Videos from 'pages/Videos';
+import Cadastro from 'pages/cadastro'
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 const Routes = () => {
@@ -30,6 +31,9 @@ const Routes = () => {
                 </Route>
                 <Route path="/Videos">
                     <Videos />
+                </Route>
+                <Route path="/Cadastro">
+                    <Cadastro />
                 </Route>
             </Switch>
         </BrowserRouter>
