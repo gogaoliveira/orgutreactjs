@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React from 'react';
+import { BASE_URL } from 'utils/requests';
 
 interface IGet {
     id: number;
@@ -14,7 +15,7 @@ const Comunidades = () => {
     const [error, setError]: [string, (error: string) => void] = React.useState("");
 
     React.useEffect(() => {
-        axios.get<IGet[]>("http://localhost:8080/communities")
+        axios.get<IGet[]>(`${BASE_URL}/communities`)
             .then(response => {
                 setGets(response.data);
             })
