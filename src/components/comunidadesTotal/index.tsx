@@ -9,15 +9,16 @@ interface IGet {
 
 const defaultGet: IGet[] = [];
 
-const Amigos = () => {
+const Comunidades = () => {
 
     const [gets, setGets]: [IGet[], (gets: IGet[]) => void] = React.useState(defaultGet);
     const [error, setError]: [string, (error: string) => void] = React.useState("");
 
     React.useEffect(() => {
-        axios.get(`${BASE_URL}/persons/page`)
+        axios.get(`${BASE_URL}/communities`)
             .then(response => {
-                setGets(response.data.content);
+                setGets(response.data);
+                console.log(response.data)
             })
             .catch(ex => {
                 const error = ex.response.status === 404 ? "Resource Not Found" : "An unexpected error fas occurred";
@@ -31,13 +32,13 @@ const Amigos = () => {
                 <div className="col" key={item.id}>
                     <div className="card bg-secondary border-0 mb-2 text-center">
                         <div className="">
-                            <img src={"https://orgut.s3.sa-east-1.amazonaws.com/pi"+item.id+".jpg"} alt="fotoPerfil" className="rounded mw-100 mx-auto red-image vh-80" />
+                            <img src={"https://orgut.s3.sa-east-1.amazonaws.com/ci" + item.id + ".jpg"} alt="fotoPerfil" className="rounded mw-100 mx-auto red-image-total vh-80" />
                         </div>
                         <div className="card-footer p-1">
                             <p className="card-text altera-fontes">{error == null ? error : item.name}</p>
-                            
+
                         </div>
-                        
+
                     </div>
                 </div>
             ))}
@@ -45,4 +46,4 @@ const Amigos = () => {
     )
 }
 
-export default Amigos;
+export default Comunidades;

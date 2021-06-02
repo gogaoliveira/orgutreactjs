@@ -81,6 +81,13 @@ html, body {
     object-fit: cover;
     object-position: center;
 }
+.red-image-total {
+    max-width: 100%;
+    height: 20vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
  
 .contact{
     padding: 4%;

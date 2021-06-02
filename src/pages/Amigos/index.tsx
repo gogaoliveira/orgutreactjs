@@ -1,6 +1,6 @@
 import Footer from "components/Footer";
 import NavBar from "components/NavBar";
-import AmigosC from "components/Amigos";
+import AmigosTotal from "components/AmigosTotal";
 import { Link } from 'react-router-dom';
 
 const Amigos = () => {
@@ -13,7 +13,7 @@ const Amigos = () => {
                         <div className="conteiner">
                             <h5>Amigos</h5>
                             <div className="row row-cols-1 row-cols-lg-5 row-cols-md-4 row-cols-sm-3 row-cols-2 g-4 ">
-                                <AmigosC />
+                                <AmigosTotal />
                             </div>
                         </div>
                     </div>

@@ -1,6 +1,6 @@
 import Footer from "components/Footer";
 import NavBar from "components/NavBar";
-import ComunidadesC from "components/comunidades"
+import ComunidadesTotal from "components/comunidadesTotal"
 
 const Comunidades = () => {
     return (
@@ -12,7 +12,7 @@ const Comunidades = () => {
                         <div className="conteiner">
                             <h5>Amigos</h5>
                             <div className="row row-cols-1 row-cols-lg-5 row-cols-md-4 row-cols-sm-3 row-cols-2 g-4 ">
-                                <ComunidadesC />
+                                <ComunidadesTotal />
                             </div>
                         </div>
                     </div>

@@ -11,6 +11,7 @@ import { Link } from 'react-router-dom';
 
 
 
+
 const Home = () => {
     return (
         <>
@@ -169,7 +170,7 @@ const Home = () => {
                         </div>
                         <div className=" bg-light rounded p-2 h-auto mt-2">
                             <div className="conteiner">
-                                <h5>Comunidades(3)</h5>
+                                <h5>Comunidades()</h5>
                                 <div className="row row-cols-1 row-cols-3 g-4 ">
                                     <Comunidades />
                                 </div>
