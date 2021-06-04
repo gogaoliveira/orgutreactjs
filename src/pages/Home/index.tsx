@@ -2,12 +2,13 @@ import Footer from "components/Footer";
 import NavBar from "components/NavBar";
 import Amigos from "components/Amigos";
 import Comunidades from "components/comunidades"
-import FotoPerfil from '../../assets/img/doug2.jpg';
 import Camera from '../../assets/img/camera.svg';
 import Filmadora from '../../assets/img/camera-reels.svg';
 import Depo from '../../assets/img/depo.svg';
 import Star from '../../assets/img/star.svg';
 import { Link } from 'react-router-dom';
+import AmigosQuantidade from "components/AmigosQuantidade";
+import ComunidadesQuantidade from "components/ComunidadesQuantidade";
 
 
 
@@ -20,7 +21,7 @@ const Home = () => {
                 <div className="row mt-2 h-100">
                     <div className="col-lg-2 bg-light rounded mr-2 text-center">
                         <div className="column mt-2">
-                            <img src={FotoPerfil} alt="fotoPerfil" className="rounded mw-100 mx-auto" />
+                            <img src="https://orgut.s3.sa-east-1.amazonaws.com/pi1.jpg" alt="fotoPerfil" className="rounded mw-100 mx-auto" />
                             <hr />
                             <p className="font-weight-bold mb-1">Douglas Oliveira</p>
                             <p className="font-weight-light mb-1">Ararangua/sc</p>
@@ -42,7 +43,7 @@ const Home = () => {
                                     <Link className="nav-link p-0 text-dark" to="/Home">
                                         <span className="h6">depoimentos</span>
                                         <div className="row justify-content-center align-items-center ">
-                                            <img src={Depo} alt="camera" className="pr-2" />
+                                            <img src={Depo}  alt="camera" className="pr-2" />
                                             <span>10</span>
                                         </div>
                                     </Link>
@@ -161,7 +162,7 @@ const Home = () => {
                     <div className="col-lg-4 p-0 ">
                         <div className=" bg-light rounded p-2 h-auto mt-2 mt-xl-0">
                             <div className="conteiner">
-                                <h5>Amigos(10)</h5>
+                                <h5>Amigos(<AmigosQuantidade/>)</h5>
                                 <div className="row row-cols-1 row-cols-3 g-4 ">
                                     <Amigos />
                                 </div>
@@ -170,7 +171,7 @@ const Home = () => {
                         </div>
                         <div className=" bg-light rounded p-2 h-auto mt-2">
                             <div className="conteiner">
-                                <h5>Comunidades()</h5>
+                                <h5>Comunidades(<ComunidadesQuantidade/>)</h5>
                                 <div className="row row-cols-1 row-cols-3 g-4 ">
                                     <Comunidades />
                                 </div>
